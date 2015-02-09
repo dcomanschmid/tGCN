@@ -1,10 +1,7 @@
 # tGCN
 Flexible Protocol for Targeted Gene Co-expression Network Analysis
 
-
-Flexible Protocol for Targeted Gene Co-expression Network Analysis
-
-The "Flexible Protocol for Targeted Gene Co-expression Network Analysis" (Coman et al. 2014) [Pubmed] presents a user-friendly workflow to perform targeted gene co-expression network analyses using large-scale gene expression data and explains critical steps from design and data analysis to prediction of functionally related modules.
+The "Flexible Protocol for Targeted Gene Co-expression Network Analysis" (Coman et al. 2014) presents a user-friendly workflow to perform targeted gene co-expression network analyses using large-scale gene expression data and explains critical steps from design and data analysis to prediction of functionally related modules.
 
 Highlights:
 
