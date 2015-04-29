@@ -13,7 +13,7 @@ library(XML)
 
 # set your working directory and read in any output file from t_GCN.R (e.g. guide_query_GCNfdr.html)
 
-workDir <- "your_working_directory"
+workDir <- ".../your_working_directory/"
 gcn <- readHTMLTable(file.path(workDir,"guide_query_GCNfdr.html"), header = TRUE)
 
 gcn.df <- as.data.frame(gcn[[1]][1:(nrow(gcn[[1]])-1),])#ignore the last row containing the total number of significant correlations
