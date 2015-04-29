@@ -24,7 +24,7 @@ alpha <- 0.05
 
 # read in the file containing the expression data for the guide genes
 
-workDir <- "...//your_working_directory//"
+workDir <- ".../your_working_directory/"
 
 guide_expression <-read.table(file.path(workDir, "guide_expression.txt"),header=TRUE, row.names=1)
 guide_expression_names <- colnames(guide_expression)
