@@ -24,14 +24,14 @@ alpha <- 0.05
 
 # read in the file containing the expression data for the guide genes
 
-workDir <- "your_working_directory"
+workDir <- "...//your_working_directory//"
 
-guide_expression <-read.csv(file.path(workDir, "guide_expression.csv"),header=TRUE, row.names=1)
+guide_expression <-read.table(file.path(workDir, "guide_expression.txt"),header=TRUE, row.names=1)
 guide_expression_names <- colnames(guide_expression)
 
 # read in the file containing the expression data for the query genes
 
-query_expression <- read.csv(file.path(workDir,"query_expression.csv"),header=TRUE, row.names=1)
+query_expression <- read.table(file.path(workDir,"query_expression.txt"),header=TRUE, row.names=1)
 m <- ncol(query_expression)
 n <- nrow(query_expression)
 cornames <- colnames(query_expression)
@@ -92,20 +92,20 @@ alpha <- 0.05
 
 # read in the file containg the names of the query genes groups
 
-query_groups_names <- read.csv(file.path(workDir,"query_groups_names.csv"),header=TRUE)
+query_groups_names <- read.table(file.path(workDir,"query_groups_names.txt"),header=TRUE)
 query_groups_names <- as.matrix(query_groups_names)
 query_groups_names_L <- length(query_groups_names)
 
 # read in the file containing the expression data for the guide genes
 
-guide_expression <-read.csv(file.path(workDir,"guide_expression.csv"),header=TRUE, row.names=1)
+guide_expression <-read.table(file.path(workDir,"guide_expression.txt"),header=TRUE, row.names=1)
 guide_expression_names <- colnames(guide_expression)
 
 HC.vec.all <- sig.num.bonf <- sig.num.holm <- sig.num.fdr <- numeric(0)
 
 for(j in 1:query_groups_names_L){
   queryname <- query_groups_names[j]
-  query_group_expression <- read.csv(file=paste(workDir,queryname,".csv", sep=""),header=TRUE, row.names=1)
+  query_group_expression <- read.table(file=paste(workDir,queryname,".txt", sep=""),header=TRUE, row.names=1)
   m <- ncol(query_group_expression)
   n <- nrow(query_group_expression)
   cornames <- colnames(query_group_expression)
