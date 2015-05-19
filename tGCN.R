@@ -1,8 +1,8 @@
 ###############################################################################################################
 # t_GCN.r script for computing targeted gene co-expression networks                                           #
+#   We are grateful to Dr. Philipp Rütimann for developing the script                                         #
 # 1. "guide-query GCN" --- computes correlations between guide and query genes                                #
-# We are grateful to Dr. Philipp Rütimann for developing the script                                           #
-# We are grateful to Dr. Marc W. Schmid, UZH, schmid.m@access.uzh.ch for improving the speed of this step     #
+#   We are grateful to Dr. Marc W. Schmid, UZH, schmid.m@access.uzh.ch for improving the speed of this step   #
 #                                                                                                             #
 # 2. "guide-query groups GCN" --- computes correlations between guide genes and groups of query genes         #
 ###############################################################################################################
